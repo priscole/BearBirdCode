@@ -2,11 +2,7 @@ import unittest
 import kvsToList
 
 def kvsToDict(aString):
-	# split1 = aString.split(",")
 	d = {}
-	# for i in split1:
-	# 	d[i.split("=")[0]] = i.split("=")[1]
-	# return d
 	new = kvsToList.kvsToList(aString)
 	for i in new:
 		d[i[0]] = i[1]
